@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Roboto&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Della Respira', serif;
+}
+
+a {
+  transition: all 0.3s ease-in-out !important;
+}
+
+a:hover {
+  color: #60f542 !important;
 }

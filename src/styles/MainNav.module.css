@@ -1,0 +1,22 @@
+.logo {
+    font-family: 'Della Respira', serif;
+    color: #60f542;
+}
+
+.logo:hover {
+    color: #d742f5 !important;
+}
+
+.logo:hover > span {
+    color: #60f542
+}
+
+.logo > span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons {
+    color: #d742f5;
+}
