@@ -20,3 +20,7 @@
 .icons {
     color: #d742f5;
 }
+
+.dark-bg {
+    background-color: black !important;
+}

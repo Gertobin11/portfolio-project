@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Roboto&display=swap');
 
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -8,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
