@@ -1,8 +1,12 @@
 .text-container {
-    box-shadow: rgba(215,66,245, 0.6) 0px 13px 27px -5px, rgb(215,66,245, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(215,66,245, 0.8) 0px 13px 27px -5px, rgb(215,66,245, 0.5) 0px 8px 16px -8px;
     background-color: black;
     border-radius: 2rem;
     padding: 1rem;
+}
+
+.text-container:hover {
+    box-shadow: rgba(215,66,245, 1) 0px 13px 27px -5px, rgb(215,66,245, 0.8) 0px 8px 16px -8px;
 }
 
 .text-container > h3 {
