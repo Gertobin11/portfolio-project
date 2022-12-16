@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+.down-arrow  {
+    font-size: 4rem;
+    animation: jumpInfinite 1.5s infinite;
+    color: rgba(215,66,245, 1);
+    transition: all .2s ease-in;
+    filter: drop-shadow(3px 2px 1px #60f542);
+}
+
+.cta:hover > .hand-drawn {
+    color: rgba(215,66,245, 1);
+}
+
+.cta:hover > .down-arrow {
+    filter: drop-shadow(4px 2px 2px rgba(215,66,245, 0.9));
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.cta:hover > *{
+    color:  #60f542;
+    cursor: pointer;
+    transform: translateY(50px);
+    cursor: pointer;
+    animation: none;
+    text-decoration: wavy;
+
+}
+
+
+.hand-drawn {
+    font-family: 'Gochi Hand',
+    cursive;
+    color: #60f542;
+    transition: all .35S ease-in;
+    font-size: 2.5rem;
+}
+
+
+@keyframes jumpInfinite {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 748px) {
+    .hand-drawn {
+        font-size: 2rem;
+    }
+}

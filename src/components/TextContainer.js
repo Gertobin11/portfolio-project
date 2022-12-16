@@ -1,11 +1,22 @@
 import React from "react";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import styles from "../styles/TextContainer.module.css";
 import Button from "./Button";
 
 const TextContainer = (props) => {
   const { title, content, cta, children } = props;
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
   return (
-    <div className={styles["text-container"]}>
+    <div ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+      className={styles["text-container"]}
+    >
       <h3>{title}</h3>
       <p>{content}</p>
       {cta ? <Button location={cta} children={children} /> : <p></p>}

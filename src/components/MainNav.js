@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 import styles from '../styles/MainNav.module.css';
 
 
@@ -26,8 +27,8 @@ function MainNav() {
             </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <Nav.Link className={styles.icons} target="_blank" href="https://www.linkedin.com/in/ger-tobin-566494200/"><FontAwesomeIcon icon={faLinkedinIn} /></Nav.Link>
-            <Nav.Link className={styles.icons} target="_blank" href="https://github.com/Gertobin11"><FontAwesomeIcon icon={faGithub} /></Nav.Link>
+            <Nav.Link className={styles.icons} target="_blank" href="https://www.linkedin.com/in/ger-tobin-566494200/"><FontAwesomeIcon icon={brands('linkedin-in')} /></Nav.Link>
+            <Nav.Link className={styles.icons} target="_blank" href="https://github.com/Gertobin11"><FontAwesomeIcon icon={brands('github')} /></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
