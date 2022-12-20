@@ -35,6 +35,12 @@
 
 }
 
+/* Remove the underline animation */
+
+.cta:hover::after {
+    display: none;
+}
+
 
 .hand-drawn {
     font-family: 'Gochi Hand',

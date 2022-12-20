@@ -1,78 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 
 .about {
-    width: 100%;
-    background-image: url(https://res.cloudinary.com/dyg53cwvw/image/upload/v1671131100/coding-background_crpwpy.jpg);
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  background-image: url(https://res.cloudinary.com/dyg53cwvw/image/upload/v1671131100/coding-background_crpwpy.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .black-overlay {
-    background:rgba(0, 0, 0, 0.85);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    row-gap: 5rem;
-    padding: 10rem 0;
-    min-height: 95vh;
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  row-gap: 5rem;
+  padding: 10rem 0;
+  min-height: 95vh;
+  overflow-x: hidden;
 }
 
+
 .about-text {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .skills-layout {
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 1;
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
 }
 
 .contact-layout {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
 }
 
 @media only screen and (max-width: 748px) {
-    .about-text {
-        margin-top: 5rem;
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 6;
-    }
+  .about-text {
+    margin-top: 5rem;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 6;
+  }
 
-    .skills-layout {
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 4;
-    }
+  .skills-layout {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 4;
+  }
 
-    .contact-layout {
-        grid-row: 2 / span 1;
-        grid-column: 4 / span 8;
-    }
+  .contact-layout {
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 8;
+  }
 
-    .black-overlay {
-        grid-template-rows: auto;
-    }
+  .black-overlay {
+    grid-template-rows: auto;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .about-text {
-        grid-column: 1 / span 8;
-        margin: 5rem .5rem 0 .5rem;
-    }
+  .about-text {
+    grid-column: 1 / span 8;
+    margin: 5rem 0.5rem 0 0.5rem;
+  }
 
-    .skills-layout {
-        grid-column: 1 /span 8;
-    }
+  .skills-layout {
+    grid-column: 1 / span 8;
+  }
 
-    .contact-layout {
-        grid-row: 3 / span 1;
-        grid-column: 1 / span 8;
-    }
-
+  .contact-layout {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 8;
+  }
 }

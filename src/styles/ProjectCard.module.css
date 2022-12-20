@@ -1,16 +1,18 @@
 .card {
-    width: 40%;
-    background-color: black;
-    box-shadow: rgba(215,66,245, 1) 0px 13px 27px -5px, rgba(215,66,245, 0.8) 0px 8px 16px -8px;
+  width: 40%;
+  background-color: black;
+  box-shadow: rgba(215, 66, 245, 1) 0px 13px 27px -5px,
+    rgba(215, 66, 245, 0.8) 0px 8px 16px -8px;
+  overflow: hidden;
 }
 
 .card:hover {
-    box-shadow: #60f542 0px 13px 27px -5px, #60f542 0px 8px 16px -8px;
+  box-shadow: #60f542 0px 13px 27px -5px, #60f542 0px 8px 16px -8px;
 }
 
+
 @media screen and (max-width: 800px) {
-    .card {
-        width: 90%;
-    }
-    
+  .card {
+    width: 90%;
+  }
 }
