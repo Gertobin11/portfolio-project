@@ -10,7 +10,7 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  z-index: -2;
+  z-index: 50;
 }
 
 .project-section::after {
@@ -19,11 +19,12 @@
   height: 100%;
   content: '';
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
 
 .projects {
+  z-index: 50;
   font-family: "Gochi Hand", cursive;
   text-shadow: 2px 2px rgba(215, 66, 245, 0.9);
   width: 100%;
