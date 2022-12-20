@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
         <Card.Text>
           {description}
         </Card.Text>
-      <NavLink href={link}>Visit Live Website </NavLink>
+      <NavLink target='_blank' href={link}>Visit Live Website </NavLink>
       </Card.Body>
     </Card>
   );
