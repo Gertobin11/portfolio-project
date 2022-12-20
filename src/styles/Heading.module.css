@@ -1,0 +1,22 @@
+.heading {
+    z-index: 50;
+    font-family: "Gochi Hand", cursive;
+    text-shadow: 2px 2px rgba(215, 66, 245, 0.9);
+    width: 100%;
+    background: rgb(96, 245, 66);
+    background: linear-gradient(
+      90deg,
+      rgba(96, 245, 66, 0.5886729691876751) 0%,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(0, 1, 1, 1) 75%,
+      rgba(216, 66, 245, 0.5158438375350141) 100%
+    );
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #60f542;
+    padding: 4rem 0;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }

@@ -2,6 +2,7 @@ import "./App.css";
 import MainNav from "./components/MainNav";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <motion.div className="progress-bar" style={{ scaleX }} />
       <About />
       <Projects />
+      <Skills />
     </>
   );
 }
