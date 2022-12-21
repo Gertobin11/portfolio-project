@@ -41,10 +41,11 @@ const ContactForm = () => {
             (result) => {
               resetForm();
               setSubmitting(false);
-              toast(`${values.name} your message has been successfully sent`);
+              toast.success(`${values.name} your message has been successfully sent`);
               console.log(result);
             },
             (error) => {
+                toast.error(`{${values.name}, sorry but an error occurred, please try again}`)
               console.log(error.text);
             }
           );
