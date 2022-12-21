@@ -4,6 +4,7 @@
     border-radius: 2rem;
     padding: 1rem;
     width: 30%;
+    height: fit-content;
 }
 
 .container:hover {

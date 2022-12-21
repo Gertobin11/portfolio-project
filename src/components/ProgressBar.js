@@ -7,7 +7,6 @@ const ProgressBar = (props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   const { name, knowledge } = props;
-  console.log(knowledge);
 
   return (
     <div className={styles["progress-bar-wrapper"]}>

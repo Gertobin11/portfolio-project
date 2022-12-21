@@ -3,6 +3,7 @@ import MainNav from "./components/MainNav";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Projects />
       <Skills />
+      <Contact />
     </>
   );
 }

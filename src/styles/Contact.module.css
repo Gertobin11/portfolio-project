@@ -1,0 +1,15 @@
+.contact-section {
+    background: url(https://res.cloudinary.com/dyg53cwvw/image/upload/v1671625894/website%20images/python-code-bg_kbwudi.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.black-overlay {
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
