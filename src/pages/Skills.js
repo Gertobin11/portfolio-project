@@ -9,10 +9,11 @@ const Skills = () => {
   return (
     <section id='skills' className={styles['skills-section']}>
         <Heading title='skills' />
-        {Object.values(SkillsData).map((skills, index) => (
-            <Container key={index}>
-                {skills.map((skill, index) => (
-                    <Badge key={index} name={skill.name} image={skill.image} />
+        {Object.keys(SkillsData).map((key, index) => (
+            <Container id={key} key={index}>
+                <h3 className={styles.title}>{key.toUpperCase()}</h3>
+                {SkillsData[key].map((skill, index) => (
+                    <Badge key={index} name={skill.name} image={skill.image} knowledge={skill.knowledge}/>
                 ))}
             </Container>
         ))}

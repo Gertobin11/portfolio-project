@@ -1,6 +1,6 @@
 .badge {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 2rem;
     width: 100%;
     height: 3rem;
@@ -8,9 +8,13 @@
     flex-wrap: wrap;
 }
 
+.badge > * {
+    margin: 0;
+}
+
 .badge > img {
     object-fit: contain;
     height: 100%;
-    width: 30%;
+    width: 20%;
 }
 
