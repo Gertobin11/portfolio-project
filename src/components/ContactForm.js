@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/ContactForm.module.css";
+import Spinner from "./Spinner";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Formik } from "formik";
@@ -43,54 +44,66 @@ const ContactForm = () => {
         isSubmitting,
       }) => (
         <Form onSubmit={handleSubmit} className={styles.form}>
-          <h3 className={styles["title-text"]}>
-            Please fill in the form below
-          </h3>
-          <Form.Group className="mb-3" controlId="formName">
-            <Form.Label visuallyHidden>Name</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.name}
-              className={touched.name && errors.name ? styles.error : null}
-            />
-            {touched.name && errors.name ? (
-              <div className={styles["error-message"]}>{errors.name}</div>
-            ) : null}
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formEmail">
-            <Form.Label visuallyHidden>Email address</Form.Label>
-            <Form.Control
-              name="email"
-              type="email"
-              placeholder="Enter email"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.email}
-              className={touched.name && errors.email ? styles.error : null}
-            />
-            <div className={styles["error-message"]}>{errors.email}</div>
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formMessage">
-            <Form.Label visuallyHidden>Your Message</Form.Label>
-            <Form.Control
-              name="message"
-              as="textarea"
-              rows={3}
-              placeholder="Enter your message"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.message}
-              className={touched.name && errors.message ? styles.error : null}
-            />
-            <div className={styles["error-message"]}>{errors.message}</div>
-          </Form.Group>
-          <Button type="submit" disabled={isSubmitting}>
-            Submit message
-          </Button>
+          {isSubmitting ? (
+            <h3 className={styles["title-text"]}>Form is sending...</h3>
+          ) : (
+            <h3 className={styles["title-text"]}>
+              Please fill in the form below
+            </h3>
+          )}
+          {isSubmitting ? (
+            <Spinner />
+          ) : (
+            <>
+              <Form.Group className="mb-3" controlId="formName">
+                <Form.Label visuallyHidden>Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.name}
+                  className={touched.name && errors.name ? styles.error : null}
+                />
+                {touched.name && errors.name ? (
+                  <div className={styles["error-message"]}>{errors.name}</div>
+                ) : null}
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formEmail">
+                <Form.Label visuallyHidden>Email address</Form.Label>
+                <Form.Control
+                  name="email"
+                  type="email"
+                  placeholder="Enter email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                  className={touched.name && errors.email ? styles.error : null}
+                />
+                <div className={styles["error-message"]}>{errors.email}</div>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formMessage">
+                <Form.Label visuallyHidden>Your Message</Form.Label>
+                <Form.Control
+                  name="message"
+                  as="textarea"
+                  rows={3}
+                  placeholder="Enter your message"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.message}
+                  className={
+                    touched.name && errors.message ? styles.error : null
+                  }
+                />
+                <div className={styles["error-message"]}>{errors.message}</div>
+              </Form.Group>
+              <Button type="submit" disabled={isSubmitting}>
+                Submit message
+              </Button>
+            </>
+          )}
         </Form>
       )}
     </Formik>
