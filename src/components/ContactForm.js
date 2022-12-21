@@ -5,6 +5,9 @@ import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const validationSchema = Yup.object().shape({
@@ -27,11 +30,24 @@ const ContactForm = () => {
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting, resetForm }) => {
         setSubmitting(true);
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          resetForm();
-          setSubmitting(false);
-        }, 500);
+        emailjs
+          .send(
+            "gertobindev",
+            "portfolio123",
+            { name: values.name, email: values.email, message: values.message },
+            "user_t7Eqsr6kbYRM3u1cedtBW"
+          )
+          .then(
+            (result) => {
+              resetForm();
+              setSubmitting(false);
+              toast(`${values.name} your message has been successfully sent`);
+              console.log(result);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
       }}
     >
       {({
@@ -99,7 +115,11 @@ const ContactForm = () => {
                 />
                 <div className={styles["error-message"]}>{errors.message}</div>
               </Form.Group>
-              <Button className={styles.submit} type="submit" disabled={isSubmitting}>
+              <Button
+                className={styles.submit}
+                type="submit"
+                disabled={isSubmitting}
+              >
                 Submit message
               </Button>
             </>
