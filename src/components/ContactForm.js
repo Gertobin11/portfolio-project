@@ -99,7 +99,7 @@ const ContactForm = () => {
                 />
                 <div className={styles["error-message"]}>{errors.message}</div>
               </Form.Group>
-              <Button type="submit" disabled={isSubmitting}>
+              <Button className={styles.submit} type="submit" disabled={isSubmitting}>
                 Submit message
               </Button>
             </>
