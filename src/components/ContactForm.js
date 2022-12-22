@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/ContactForm.module.css";
 import Spinner from "./Spinner";
-import { Button } from "react-bootstrap";
+import { Button} from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
+    console.log(process.env.REACT_APP_EMAIL_USER)
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, "*Names must have at least 2 characters")
@@ -32,10 +33,10 @@ const ContactForm = () => {
         setSubmitting(true);
         emailjs
           .send(
-            "gertobindev",
-            "portfolio123",
+            process.env.REACT_APP_EMAIL_SERVICE,
+            process.env.REACT_APP_EMAIL_TEMPLATE,
             { name: values.name, email: values.email, message: values.message },
-            "user_t7Eqsr6kbYRM3u1cedtBW"
+            process.env.REACT_APP_EMAIL_USER
           )
           .then(
             (result) => {

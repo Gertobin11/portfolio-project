@@ -13,6 +13,7 @@
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.3",
     "emailjs-com": "^3.2.0",
+    "env-cmd": "^10.1.0",
     "formik": "^2.2.9",
     "framer-motion": "^7.10.2",
     "react": "^18.2.0",
@@ -25,7 +26,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd -f .env.local react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
