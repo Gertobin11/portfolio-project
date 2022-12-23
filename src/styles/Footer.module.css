@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 2rem 1rem;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+}
+
+.footer-nav > * {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.socials > * {
+    color: rgba(215,66,245, 1);
+    font-size: 1.3rem;
+}
