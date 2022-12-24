@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Footer.module.css";
 import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const Footer = () => {
   return (
@@ -26,6 +26,7 @@ const Footer = () => {
             >
               <FontAwesomeIcon icon={brands("github")} />
             </Nav.Link>
+            <Nav.Link className={styles.icons} target="_blank" href="mailto:gertobindev@gmail.com"><FontAwesomeIcon icon={solid('envelope')} /></Nav.Link>
           </Nav>
       </div>
       <div>
