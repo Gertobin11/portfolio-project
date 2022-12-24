@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BacktToTopBtn from "./components/BacktToTopBtn";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <ToastContainer />
+      <BacktToTopBtn />
       <MainNav />
       <motion.div className="progress-bar" style={{ scaleX }} />
       <About />

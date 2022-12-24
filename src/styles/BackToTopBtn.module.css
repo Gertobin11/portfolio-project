@@ -1,0 +1,39 @@
+.wrapper {
+    color: white;
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+    background-color: rgba(215,66,245, 1);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 1500;
+    cursor: pointer;
+    box-shadow: rgba(96, 245, 66, 0.7) 0px 5px 15px;
+    transition: all .35s ease-in-out;
+}
+
+.wrapper > * {
+    animation: arrow-up 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    font-size: 1.5rem;
+    filter: drop-shadow(3px 2px 1px black);
+}
+
+.wrapper:hover >  * {
+    animation: none;
+}  
+
+.wrapper:hover {
+    background-color: rgba(96, 245, 66, 1);
+    color: black;
+    box-shadow:  rgba(215,66,245, 0.7) 0px 5px 15px;
+}
+
+@keyframes arrow-up {
+    0% {
+      transform: translateY(.5rem);
+    }
+    100% {
+      transform: translateY(-.5rem);
+    }
+
+  }
