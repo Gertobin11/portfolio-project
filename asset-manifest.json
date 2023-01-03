@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Gertobin11/portfolio-project/static/css/main.93e74b0e.css",
+    "main.js": "/Gertobin11/portfolio-project/static/js/main.b2834d2e.js",
+    "static/js/787.128fc6e9.chunk.js": "/Gertobin11/portfolio-project/static/js/787.128fc6e9.chunk.js",
+    "index.html": "/Gertobin11/portfolio-project/index.html",
+    "main.93e74b0e.css.map": "/Gertobin11/portfolio-project/static/css/main.93e74b0e.css.map",
+    "main.b2834d2e.js.map": "/Gertobin11/portfolio-project/static/js/main.b2834d2e.js.map",
+    "787.128fc6e9.chunk.js.map": "/Gertobin11/portfolio-project/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e74b0e.css",
+    "static/js/main.b2834d2e.js"
+  ]
+}
