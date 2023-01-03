@@ -14,6 +14,7 @@
     "bootstrap": "^5.2.3",
     "emailjs-com": "^3.2.0",
     "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
     "formik": "^2.2.9",
     "framer-motion": "^7.10.2",
     "node": "^19.3.0",
@@ -26,9 +27,9 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
-  "engines" : { 
-    "npm" : ">=8.0.0 <9.0.0",
-    "node" : ">=16.0.0 <17.0.0"
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
     "start": "env-cmd -f .env.local react-scripts start",
