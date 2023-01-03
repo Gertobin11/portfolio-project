@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/Gertobin11/portfolio-project",
+  "homepage": "https://github.com/Gertobin11/portfolio-project/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
