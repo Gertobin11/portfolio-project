@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
       opacity: isInView ? 1 : 0,
       transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
     }} className={styles.card}>
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={image} alt="Image of a website created by Ger Tobin"/>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
