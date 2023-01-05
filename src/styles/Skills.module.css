@@ -6,7 +6,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  row-gap: 8rem;
   max-width: 100%;
   overflow: hidden;
   position: relative;
@@ -24,9 +24,9 @@
 }
 
 .title {
-    font-family: "Gochi Hand", cursive;
-    text-shadow: 2px 2px rgba(215, 66, 245, 0.9);
-    width: 100%;
-    text-align: center;font-size: 2.5rem;
-    color: #60f542;
+  font-family: "Gochi Hand", cursive;
+  text-shadow: 2px 2px rgba(215, 66, 245, 0.9);
+  width: 100%;
+  text-align: center;font-size: 2.5rem;
+  color: #60f542;
 }

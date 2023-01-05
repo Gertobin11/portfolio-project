@@ -10,7 +10,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
-    console.log(process.env.REACT_APP_EMAIL_USER)
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, "*Names must have at least 2 characters")
