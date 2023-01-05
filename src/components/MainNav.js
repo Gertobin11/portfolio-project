@@ -11,7 +11,7 @@ function MainNav() {
   return (
     <Navbar className={styles['dark-bg']} collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand  className={styles.logo} href="#home">Ger Tobin<span className='text-highlight'> | Web Developer </span></Navbar.Brand>
+        <Navbar.Brand  className={styles.logo} href="#about">Ger Tobin<span className='text-highlight'> | Web Developer </span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
