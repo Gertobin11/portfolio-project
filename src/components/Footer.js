@@ -16,6 +16,7 @@ const Footer = () => {
               className={styles.icons}
               target="_blank"
               href="https://www.linkedin.com/in/ger-tobin-566494200/"
+              aria-label="Linkedin"
             >
               <FontAwesomeIcon icon={brands("linkedin-in")} />
             </Nav.Link>
@@ -23,10 +24,11 @@ const Footer = () => {
               className={styles.icons}
               target="_blank"
               href="https://github.com/Gertobin11"
+              aria-label="Github"
             >
               <FontAwesomeIcon icon={brands("github")} />
             </Nav.Link>
-            <Nav.Link className={styles.icons} target="_blank" href="mailto:gertobindev@gmail.com"><FontAwesomeIcon icon={solid('envelope')} /></Nav.Link>
+            <Nav.Link className={styles.icons} target="_blank" href="mailto:gertobindev@gmail.com" aria-label="Email"><FontAwesomeIcon icon={solid('envelope')} /></Nav.Link>
           </Nav>
       </div>
       <div>
