@@ -8,6 +8,7 @@ const About = () => {
   const title = "Ger Tobin | Web Developer";
   const content = about;
 
+
   return (
     <section className={styles.about} id="about">
       <div className={styles["black-overlay"]}>
