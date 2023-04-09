@@ -1,7 +1,6 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://myportfolio.gertobin.org/",
   "private": true,
   "engines": {
     "node": "18.12.1"
